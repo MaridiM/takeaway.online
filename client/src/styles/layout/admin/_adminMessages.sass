@@ -1,0 +1,106 @@
+.admin-messages
+    width: 100%
+    height: 100%
+    overflow: hidden
+    position: relative
+    &__body
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        margin-left: 15px
+        padding-right: 15px
+        overflow: hidden scroll
+    &__message
+        display: flex
+        justify-content: center
+        margin: 25px auto
+        width: 60%
+        &-answer
+            width: calc(100% - 25px)
+            display: flex
+            height: auto
+        &-wrapper
+            display: flex
+            align-items: flex-end
+            flex-direction: column
+        &-avatar
+            min-width: 100px
+            max-width: 100px
+            height: 100px
+            border-radius: 15px
+            overflow: hidden
+            box-shadow:  3px 3px 9px rgba(0, 0, 0, .5)
+            background: #ffffff
+            .avatar
+                box-shadow: none
+        &-content
+            padding: 0 10px 10px 25px
+            width: 100%
+            color: $mainColor
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, .3)
+        &-username
+            font-size: 14px
+            line-height: 20px
+            margin-bottom: 10px
+            width: 100%
+            display: flex
+            color: #fff
+            padding: 5px 15px 2px 15px
+            background: $mainColor
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, .5)
+            span
+                font-size: 10px
+                line-height: 20px
+                margin-left: auto
+        &-text 
+            width: 100%
+            text-indent: 25px 
+            letter-spacing: 0.5px  
+            font-size: 14px 
+            background: #fff
+            padding: 10px 15px
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, .5)
+        .ant-form-item
+            border: none
+            background: #ffffff
+            outline: none
+            width: 100%
+            height: 100px
+            box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.5) 
+            margin-top: 10px
+            .ant-form-item-control-input
+                padding: 0.5px
+                height: 100%
+                width: 100%
+                &-content
+                    width: 100%
+                    height: 100%
+                    textarea
+                        width: 100%
+                        height: 100%
+                        font-family: $mainFont
+                        padding: 10px 15px 
+                        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) 
+                        font-size: 12px
+                        letter-spacing: 1px
+                        resize: none
+        &-btns
+            width: 100%
+            margin-top: 10px
+            text-align: right
+            background: $mainColor
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, .5)
+            button
+                border: none
+                outline: none
+                background: none
+                color: #fff
+                margin: 5px 0px
+                padding: 13px 10px 10px 10px 
+                font-family: $mainFont
+                font-size: 14px
+                text-shadow: 1px 1px 3px rgba(255, 255, 255, .3)
+                letter-spacing: 1.4px
+                &:hover 
+                    color: $activeColor

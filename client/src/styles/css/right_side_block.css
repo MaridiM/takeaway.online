@@ -1,0 +1,124 @@
+/* 
+// RIGHT SIDE
+*/
+.right-side {
+    height: 100vh;
+    width: 275px;
+    background: #fff;
+    box-shadow: var(--rudeBoxShadow);
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: -15px;
+    padding: 0 15px 0 15px;
+}
+
+.right-side .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 8px;
+    box-shadow: var(--accentBoxShadow);
+    border-radius: 5px;
+    background: #fff;
+    position: relative;
+}
+
+.right-side .item:hover {
+    box-shadow: var(--rudeBoxShadow);
+    transform: scale(1.01) translate(0%, 0%);
+}
+
+.right-side .item-title {
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.right-side .item .item-img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.right-side .item .item-nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.right-side .item .item-nav button {
+    width: auto;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 10px 0 10px;
+    font-size: 12px;
+    background: var(--accentColor);
+    font-family: var(--mainFont);
+    box-shadow: var(--insetBoxShadow);
+    text-shadow: var(--textShadow);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+}
+
+.right-side .item .item-nav button:hover {
+    background: var(--activeColor);
+    color: #FFF;
+}
+
+.right-side .item .item-nav .active {
+    background: var(--activeColor);
+    color: #FFF;
+}
+
+.right-side .item .item-nav-price {
+    width: 74px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+    border-radius: 5px;
+    font-size: 18px;
+    background: var(--bgcolor);
+    box-shadow: inset var(--rudeBoxShadow);
+    text-shadow: var(--textShadow);
+    margin: 0;
+}
+
+.right-side .item .item-nav-price span {
+    margin-right: 3px;
+}
+
+.right-side .item .discount {
+    position: absolute;
+    top: 48px;
+    margin-left: 12px;
+    width: 100px;
+    height: auto;
+}
+
+.right-side .item .discount p {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 26px);
+    font-size: 16px;
+    color: #fff;
+    text-shadow: var(--textShadow);
+}
+
+.right-side .item .discount p span {
+    margin-right: 3px;
+}

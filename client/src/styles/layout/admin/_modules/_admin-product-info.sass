@@ -1,0 +1,68 @@
+.admin-product-info
+    min-width: 300px
+    max-width: 550px
+    height: 100%
+    background: #ffffff
+    box-shadow: $lightShadowBox
+    overflow: hidden
+    margin-left: 15px
+    &__wrapper
+        overflow: hidden scroll
+        width: calc(100% + 17px)
+        height: 100%
+    &__header
+        background: $mainColor
+        &-title
+            color: #fff
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, .4)
+    &__body
+        min-height: calc(100% - 135px)
+        &-img
+            margin: auto
+            max-width: 350px
+            max-height: 350px
+        &-info
+            &-title
+                text-align: center
+                padding:  0 0 10px 0
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, .4)
+            ul
+                min-height: 300px 
+                li
+                    font-size: 13px
+                    margin: 10px 0
+                    padding: 5px 50px 
+                    padding: 5px 50px 
+                    &:nth-child(1),                    
+                    &:nth-child(2)
+                        text-align: center                
+                    span
+                        margin: 0
+                        font-size: 18px
+    &__footer
+        display: flex
+        height: 75px
+        &-btns
+            height: 100%
+            width: 100%
+            font-size: 24px
+            .btn-nav
+                height: 100%
+                width: 33.33%
+                border: none
+                border-top: 1px solid rgba(0, 0, 0, 0.1)
+                border-left: 1px solid rgba(0, 0, 0, 0.1)
+                outline: none
+                background: none
+                text-shadow: 1px 1px 4px rgba(0, 0, 0, .4)
+                &:nth-child(2):hover
+                    background: $removeColor
+                &:hover
+                    text-shadow: 1px 1px 4px rgba(255, 255, 255, .4)
+                    background: $mainColor
+                    outline: none
+                    color: #fff  
+        
+
+            
+                        

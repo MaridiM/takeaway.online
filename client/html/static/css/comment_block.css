@@ -1,0 +1,522 @@
+/* 
+// COMMENTS FORM
+*/
+#post-page .comment-block {
+    width: 100%;
+}
+
+#post-page .comment-block hr {
+    width: 98%;
+}
+
+#post-page .comment-block .сomment-form {
+    margin: 20px 0 3px 0;
+}
+
+#post-page .comment-block .сomment-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+#post-page .comment-block .сomment-form form input {
+    width: 48%;
+    margin: 10px auto;
+    padding-top: 2px;
+    padding-left: 25px;
+
+}
+
+#post-page .comment-block .сomment-form form input:nth-child(1) {
+    margin-right: 1%;
+}
+
+#post-page .comment-block .сomment-form form textarea {
+    width: 98%;
+    height: 150px;
+    border-radius: 3px;
+    padding-top: 15px;
+    padding-left: 25px;
+}
+
+#post-page .comment-block .сomment-form form a {
+    font-size: 14px;
+    margin: 5px 1% 0 1%;
+    text-shadow: var(--textShadow);
+}
+
+#post-page .comment-block .сomment-form form input:last-child {
+    margin-right: 1%;
+    text-align: center;
+    font-family: var(--mainFont);
+    text-shadow: var(--textShadow);
+    width: auto;
+    height: 40px;
+    font-size: 14px;
+    padding: 2px 15px 0 15px;
+}
+
+#post-page .comment-block .сomment-form form input:last-child:hover {
+    background: var(--accentColor);
+    color: #fff;
+}
+
+/* 
+// COMMENTS BLOCK
+// Comments
+*/
+#post-page .comments {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px 0 30px 0;
+}
+
+#post-page .comments .comment-articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 0;
+}
+
+#post-page .comments .comment-articles .comment {
+    height: auto;
+    width: 98%;
+    box-shadow: var(--insetBoxShadow);
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+}
+
+#post-page .comments .comment-articles .comment .img {
+    width: 150px;
+    height: auto;
+    box-shadow: var(--insetBoxShadow);
+}
+
+#post-page .comments .comment-articles .comment .img img {
+    width: 100%;
+    height: auto;
+}
+
+#post-page .comments .comment-articles .comment-content {
+    width: calc(100% - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+#post-page .comments .comment-articles .comment-content header {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 25px 0 25px;
+    text-shadow: var(--textShadow);
+}
+
+#post-page .comments .comment-articles .comment-content header h5 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+}
+
+#post-page .comments .comment-articles .comment-content header time {
+    font-size: 12px;
+}
+
+#post-page .comments .comment-articles .comment-content p {
+    font-size: 12px;
+    height: 75px;
+    padding: 2px 15px 5px 15px;
+    margin: 5px 0;
+    overflow: hidden;
+    display: block;
+    text-align: justify;
+    text-indent: 25px;
+}
+
+#post-page .comments .comment-articles .comment-content footer {
+    height: 35px;
+}
+
+#post-page .comments .comment-articles .comment-content footer .soc {
+    height: 35px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#post-page .comments .comment-articles .comment-content footer ul li {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: var(--textShadow);
+}
+
+#post-page .comments .comment-articles .comment-content footer .soc li ul {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+#post-page .comments .comment-articles .comment-content footer .soc li ul li {
+    margin: 0 10px;
+}
+
+#post-page .comments .comment-articles .comment-content footer .soc li ul li a {
+    font-size: 14px;
+    margin-top: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#post-page .comments .comment-articles .comment-content footer .soc li ul li a:hover {
+    color: var(--accentColor);
+}
+
+#post-page .comments .comment-articles .comment-content footer .soc li ul li span {
+    font-size: 10px;
+    padding: 4px 10px 0 10px;
+    margin-left: 5px;
+    margin-top: -8px;
+    box-shadow: var(--insetBoxShadow);
+    border-radius: 5px;
+}
+
+#post-page .comments .comment-articles .comment-content footer .soc li .btn {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: var(--textShadow);
+    margin: 0 15px 0 0;
+    padding: 0;
+}
+
+#post-page .comments .comment-articles .comment-content footer .soc li .btn a {
+    border: 1px solid rgba(44, 44, 44, 0.09);
+    font-size: 12px;
+    width: 100px;
+    height: 24px;
+    padding-top: 3px;
+    margin-top: -1px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#post-page .comments .comment-articles .comment-content footer .soc li .btn a:hover {
+    background: rgba(44, 44, 44, 0.05);
+    color: #2C2C2C;
+}
+
+/* 
+// COMMENTS BLOCK
+// Answer
+*/
+#post-page .comments .comment-articles .answers {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#post-page .comments .comment-articles .answers .answer {
+    margin: 5px 1% 0 0;
+    height: auto;
+    width: 88%;
+    box-shadow: var(--insetBoxShadow);
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+}
+
+#post-page .comments .comment-articles .answers .answer .img {
+    width: 120px;
+    height: auto;
+    box-shadow: var(--insetBoxShadow);
+}
+
+#post-page .comments .comment-articles .answers .answer .img img {
+    width: 100%;
+    height: auto;
+}
+
+#post-page .comments .comment-articles .answers .answer .answer-content {
+    width: calc(100% - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+#post-page .comments .comment-articles .answers .answer .answer-content header {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 25px 0 25px;
+    text-shadow: var(--textShadow);
+}
+
+#post-page .comments .comment-articles .answers .answer .answer-content header h5 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    font-size: 12px;
+}
+
+#post-page .comments .comment-articles .answers .answer .answer-content header time {
+    font-size: 10px;
+}
+
+#post-page .comments .comment-articles .answers .answer-content p {
+    font-size: 10px;
+    height: 50px;
+    padding: 2px 15px 5px 15px;
+    margin: 5px 0;
+    overflow: hidden;
+    display: block;
+    text-align: justify;
+    text-indent: 25px;
+}
+
+#post-page .comments .comment-articles .answers .answer .answer-content footer {
+    height: 30px;
+}
+
+#post-page .comments .comment-articles .answers .answer .answer-content footer .soc {
+    height: 30px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#post-page .comments .comment-articles .answers .answer .answer-content footer ul li {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: var(--textShadow);
+}
+
+#post-page .comments .comment-articles .answers .answer .answer-content footer .soc li ul {
+    display: flex;
+    margin-top: 3px;
+    margin-left: 15px;
+}
+
+#post-page .comments .comment-articles .answers .answer .answer-content footer .soc li ul li {
+    margin: 0 7.5px;
+}
+
+#post-page .comments .comment-articles .answers .answer .answer-content footer .soc li ul li a {
+    font-size: 14px;
+    margin-top: -6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#post-page .comments .comment-articles .answers .answer .answer-content footer .soc li ul li a:hover {
+    color: var(--accentColor);
+}
+
+#post-page .comments .comment-articles .answers .answer .answer-content footer .soc li ul li span {
+    font-size: 10px;
+    padding: 4px 10px 0 10px;
+    margin-left: 5px;
+    margin-top: -4px;
+    box-shadow: var(--insetBoxShadow);
+    border-radius: 5px;
+}
+
+#post-page .comments .comment-articles .answers .answer .answer-content footer .soc li .btn {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: var(--textShadow);
+    margin: 1px 15px 0 0;
+    padding: 0;
+}
+
+#post-page .comments .comment-articles .answers .answer .answer-content footer .soc li .btn a {
+    border: 1px solid rgba(44, 44, 44, 0.09);
+    font-size: 10px;
+    width: 100px;
+    height: 20px;
+    padding-top: 3px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1.5px;
+}
+
+#post-page .comments .comment-articles .answers .answer .answer-content footer .soc li .btn a:hover {
+    background: rgba(44, 44, 44, 0.05);
+    color: #2C2C2C;
+}
+
+/* 
+// COMMENTS BLOCK
+// Answer to Answer
+*/
+#post-page .comments .comment-articles .answers .answer-to-answer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer {
+    margin: 5px 1% 0 0;
+    height: auto;
+    width: 78%;
+    box-shadow: var(--insetBoxShadow);
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .img {
+    width: 120px;
+    height: auto;
+    box-shadow: var(--insetBoxShadow);
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .img img {
+    width: 100%;
+    height: auto;
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .answer-content {
+    width: calc(100% - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .answer-content header {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 25px 0 25px;
+    text-shadow: var(--textShadow);
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .answer-content header h5 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    font-size: 12px;
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .answer-content header time {
+    font-size: 10px;
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .answer-content p {
+    font-size: 10px;
+    height: 50px;
+    padding: 1px 15px 0 15px;
+    margin: 5px 0;
+    overflow: hidden;
+    display: block;
+    text-align: justify;
+    text-indent: 25px;
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .answer-content footer {
+    height: 30px;
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .answer-content footer .soc {
+    height: 30px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .answer-content footer ul li {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: var(--textShadow);
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .answer-content footer .soc li ul {
+    display: flex;
+    margin-top: 2.5px;
+    margin-left: 15px;
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .answer-content footer .soc li ul li {
+    margin: 0 7.5px;
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .answer-content footer .soc li ul li a {
+    font-size: 14px;
+    margin-top: -6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .answer-content footer .soc li ul li a:hover {
+    color: var(--accentColor);
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .answer-content footer .soc li ul li span {
+    font-size: 10px;
+    padding: 4px 10px 0 10px;
+    margin-left: 5px;
+    margin-top: -4px;
+    box-shadow: var(--insetBoxShadow);
+    border-radius: 5px;
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .answer-content footer .soc li .btn {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: var(--textShadow);
+    margin: 0 15px 0 0;
+    padding: 3px 7.5px 0 7.5px;
+    font-size: 10px;
+    border: 1px solid rgba(44, 44, 44, 0.09);
+    margin-top: -1.25px;
+}
+
+#post-page .comments .comment-articles .answers .answer-to-answer .answer .answer-content footer .soc li .btn:hover {
+    background: rgba(44, 44, 44, 0.05);
+    color: #2C2C2C;
+}

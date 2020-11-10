@@ -1,0 +1,178 @@
+.content
+    width: 100%
+    height: 100%
+    &__content
+        width: 100%
+        height: calc(100% - 75px)
+        display: flex
+        padding: 15px
+        overflow: hidden
+        .list-group
+            width: 100%
+            min-width: 571px
+            height: 100%
+            box-shadow: inset 0 0 4px rgba(0, 0, 0, .5)
+            background: #fff
+            display: flex
+            flex-direction: column
+            overflow: hidden
+            
+            &__list
+                width: calc(100% + 35px)
+                height: 100%
+                overflow: hidden scroll
+                padding-right: 15px
+                &-item
+                    overflow: hidden
+                    padding-right: 0
+                    width: 98%
+                    height: 80px
+                    margin: 8.5px auto
+                    box-shadow: $lightShadowBox
+                    display: flex
+                    justify-content: center
+                    background: #fff
+                    &:hover
+                        box-shadow: 3px 3px 4px rgba(0, 0, 0, .3)
+                    &__img
+                        box-shadow: inset $lightShadowBox
+                        min-width: 80px
+                        max-width: 80px
+                        height: 100%
+                        font-size: 10px
+                        img
+                            width: 98%
+                            height: 98%
+                    &__content
+                        display: flex
+                        flex-grow: 1
+                        color: $mainColor
+                        &-body
+                            display: flex
+                            flex-direction: column
+                            height: 100%
+                            font-size: 10px
+                            padding: 10px
+                            overflow: hidden
+                            flex-grow: 1
+                            line-height: 16px
+                        &-text 
+                            overflow: hidden
+                            padding: 10px 
+                            color: $mainColor
+
+                        &-title
+                            font-size: 14px
+                            line-height: 16px
+                            width: 100%
+                            padding: 0 10px
+                            text-shadow: 1px 1px 2px rgba(0, 0, 0, .5)
+                        &-price
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            width: 75px
+                            height: 100%
+                            font-size: 24px
+                            line-height: 24px
+                            text-shadow: 1px 1px 2px rgba(0, 0, 0, .5)
+                            padding-top: 6px
+                            padding-right: 20px
+                    &__btns
+                        display: flex
+                        width: 150px
+                        height: 100%
+                        .btn
+                            width: 50px
+                            background: none
+                            border: none
+                            font-size: 24px
+                            color: $mainColor
+                            text-shadow: 0 0 1px rgba(0, 0, 0, 1px)
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            opacity: .5             
+                            outline: none    
+                            &:hover
+                                opacity: .9
+                                outline: none
+                          
+            &__cards
+                width: calc(100% + 35px)
+                height: auto
+                display: flex
+                flex-wrap: wrap
+                overflow: hidden scroll
+                .card
+                    width: 225px
+                    padding: 5px 15px
+                    height: auto
+                    box-shadow: 1px 1px 4px rgba(0, 0, 0, .3)
+                    overflow: hidden
+                    background: #fff
+                    margin: 8px 14.5px
+                    &:hover
+                        box-shadow: 3px 3px 4px rgba(0, 0, 0, .3)
+                    &__img
+                        width: 150px
+                        height: 150px
+                        margin: auto
+                        overflow: hidden
+                        img
+                            width: 100%
+                            height: 100%
+                    &__body
+                        width: 100%
+                        height: auto
+                        &-title
+                            font-size: 14px
+                            text-align: center
+                            line-height: 12px
+                            text-shadow: 1px 1px 2px rgba(0, 0, 0, .3)
+                            color: $mainColor
+                        &-text
+                            height: 50px
+                            font-size: 10px
+                            line-height: 16px
+                            letter-spacing: 1px
+                            overflow: hidden
+                            display: block
+                            text-align: center
+                            padding: 5px 0
+                            text-shadow: 1px 1px 2px rgba(0, 0, 0, .3)
+                            color: rgba($mainColor, .7)
+                    &__footer
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        height: 28px
+                        width: 100%
+                        &-price
+                            font-size: 20px
+                            line-height: 28px
+                            padding-top: 4px
+                            text-shadow: 1px 1px 2px rgba(0, 0, 0, .3)
+                                                
+                        &-btns
+                            height: 100%
+                            display: flex   
+                            outline: none
+                            .btn
+                                width: 28px
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                font-size: 18px
+                                padding: 0
+                                outline: none
+                                border: none
+                                background: none
+                                color: $mainColor
+                                opacity: .5
+                                margin: 0 2px
+                                &:hover
+                                    opacity: .9
+                .showInfo
+                        margin: 8px 9.5px
+

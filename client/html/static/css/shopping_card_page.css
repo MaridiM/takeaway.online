@@ -1,0 +1,299 @@
+/* **************************** */
+/*                              */
+/*      SHOPPING CARD PAGE      */
+/*                              */
+/* **************************** */
+#shopping-card-page {
+    height: 100vh;
+    display: flex;
+}
+#shopping-card-page hr {
+    width: 95%;
+    margin: auto;
+    border: none;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.07);
+}
+#shopping-card-page .content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#shopping-card-page .items {
+    width: calc(100% - 500px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    padding: 10px;
+    z-index: 0;
+    margin: 50px 0;
+    /*    
+    height: 100%;
+    margin-right: -15px;
+    padding-right: 15px;
+    */
+}
+#shopping-card-page .items .item {
+    box-shadow: var(--accentBoxShadow);
+    border-radius: 5px;
+    width: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin: 12px;
+}
+#shopping-card-page .items .item .close {
+    position: absolute;
+    right: 3.5%;
+    top: 1.5%;
+    font-size: 22px;
+    color: rgba(44, 44, 44, 0.5);
+}
+#shopping-card-page .items .item .close:hover {
+    color: rgba(44, 44, 44, .9);
+}
+#shopping-card-page .items .item .item-img {
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+#shopping-card-page .items .item .item-img img {
+    border-radius: 5px 0 0 5px;
+    width: 150%;
+    position: absolute;
+    height: auto;
+}
+#shopping-card-page .items .item h2 {
+    width: 100%;
+    height: 75px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px 4px 20px;
+    margin: -40px 0 0 0;
+}
+#shopping-card-page .items .item .nav {
+    width: 100%;
+    padding: 10px 0 15px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#shopping-card-page .items .item .nav-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    text-shadow: var(--textShadow);
+}
+#shopping-card-page .items .item .nav-price span {
+    margin: 0 5px;
+}
+#shopping-card-page .items .item .nav-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 0 10px;
+}
+#shopping-card-page .items .item .nav-count button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    font-size: 28px;
+    padding-left: 2px;
+    outline: none;
+    background: var(--baseColor);
+    color: var(--textColor);
+    text-shadow: var(--textShadow);
+    box-shadow: var(--insetBoxShadow);
+    font-family: var(--mainFont);
+}
+#shopping-card-page .items .item .nav-count .plus:hover {
+    background: var(--activeColor);
+    color: #fff;
+}
+#shopping-card-page .items .item .nav-count .minus:hover {
+    background: var(--removeColor);
+    color: #fff;
+}
+#shopping-card-page .items .item .nav-count .count {
+    width: 60px;
+    height: 40px;
+    background: var(--bgColor);
+    margin: auto 5px;
+    border-radius: 5px;
+    padding-top: 5px;
+    font-size: 24px;
+    box-shadow: var(--insetBoxShadow);
+    text-shadow: var(--textShadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#shopping-card-page .items .item .discount {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 45px);
+    width: 90px;
+    height: auto;
+}
+#shopping-card-page .items .item .discount p {
+    position: absolute;
+    top: calc(50% - 13px);
+    left: calc(50% - 27px);
+    font-size: 16px;
+    color: #fff;
+    text-shadow: var(--textShadow);
+}
+#shopping-card-page .items .item .discount p span {
+    margin-right: 3px;
+}
+/* 
+//  Order
+*/
+#shopping-card-page .order {
+    width: 500px;
+    height: 100%;
+    box-shadow: var(--rudeBoxShadow);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+}
+#shopping-card-page .order h2 {
+    width: 100%;
+    height: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-size: 36px;
+    text-shadow: var(--textShadow);
+    padding-top: 10px;
+}
+#shopping-card-page .order form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#shopping-card-page .order form .form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#shopping-card-page .order form .form label {
+    width: 80%;
+    margin: 5px auto 0 aut o;
+}
+#shopping-card-page .order form .form input {
+    width: 80%;
+    height: 60px;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+    box-shadow: var(--insetBoxShadow);
+}
+#shopping-card-page .order form .alert {
+    margin: 10px auto;
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+    text-shadow: var(--textShadow);
+    color: var(--textColor);
+}
+#shopping-card-page .order form .cost {
+    width: 90%;
+    height: 75px;
+    border-radius: 15px;
+    margin: 10px auto;
+    background: var(--bgColor);
+    box-shadow: var(--insetBoxShadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    padding-top: 12px;
+    text-shadow: var(--textShadow);
+}
+#shopping-card-page .order form .cost span {
+    margin-right: 10px;
+}
+#shopping-card-page .order form .nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+#shopping-card-page .order form .nav .btns {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 14px;
+}
+#shopping-card-page .order form .nav .btns a {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgba(44, 44, 44, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+#shopping-card-page .order form .nav .btns a:hover {
+    color: var(--textColor);
+    background: rgba(44, 44, 44, 0.1);
+}
+#shopping-card-page .order form .nav .btns .btn {
+    display: flex;
+}
+#shopping-card-page .order form .nav .btns .btn button {
+    font-size: 14px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: var(--baseColor);
+    box-shadow: var(--insetBoxShadow);
+    font-family: var(--mainFont);
+    padding-top: 3px;
+    text-shadow: var(--textShadow);
+}
+#shopping-card-page .order form .nav .btns .btn button:nth-child(1) {
+    margin-right: 15px;
+}
+
+#shopping-card-page .order form .nav .btns .btn button:nth-child(2) {
+    background: var(--accentColor);
+    color: #FFF;
+}
+#shopping-card-page .order form .nav .btns .btn button:nth-child(1):hover {
+    color: #fff;
+    background: var(--removeColor);
+}
+#shopping-card-page .order form .nav .btns .btn button:nth-child(2):hover {
+    color: #fff;
+    background: var(--activeColor);
+}

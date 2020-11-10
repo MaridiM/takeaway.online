@@ -1,0 +1,83 @@
+/* **************************** */
+/*                              */
+/*          MAIN ASIDE          */
+/*                              */
+/* **************************** */
+#main-aside {
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: var(--rudeBoxShadow);
+    text-align: center;
+}
+
+#main-aside .avatar {
+    height: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#main-aside .avatar img {
+    margin-right: 0px;
+    border-radius: 5px;
+    box-shadow: var(--accentBoxShadow);
+}
+#main-aside .logo {
+    height: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#main-aside .logo img {
+    margin-right: -10px;
+}
+#main-aside nav {
+    width: 100%;
+    height: calc(75% - 75px);
+    padding-top: 40%;
+}
+#main-aside nav hr {
+    width: 75%;
+    margin: auto;
+    border: none;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, .07);
+}
+#main-aside nav ul {
+    margin: 10px auto;
+}
+#main-aside nav ul li {
+    margin: 15px 0;
+    text-shadow: var(--textShadow);
+}
+#main-aside nav .main {
+    margin-bottom: 25px;
+}
+#main-aside nav .auth {
+    font-size: 14px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#main-aside nav .auth li {
+    margin: 3px 5px;
+}
+
+#main-aside nav .soc {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#main-aside nav .soc li {
+    margin: 0 10px;
+}
+
+#main-aside footer {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    font-size: 13px;
+    text-shadow: var(--textShadow);
+}

@@ -1,0 +1,31 @@
+.warning-wrapper
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .warning
+        margin-top: -100px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction:  column
+        font-size: 24px
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, .6)
+        img
+            width: 150px
+            height: auto
+            margin-bottom: 50px
+        a
+            box-shadow: $rudeBoxShadow
+            width: 175px
+            height: 50px
+            text-align: center
+            padding-bottom: 2px
+            font-size: 20px
+            margin-top: 25px
+            line-height: 50px
+            background: $accentColor
+            color: #fff
+            &:hover
+                background: $activeColorClient

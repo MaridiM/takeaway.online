@@ -1,0 +1,33 @@
+/* ************************************************** */
+/*                       BASE                         */
+/**************************************************** */
+@import "./_vars.css";
+@import "./../libs/bootstrap-4.3.1/bootstrap.min.css";
+@import "./base_style.css";
+
+
+/**************************************************** */
+/* ************************************************** */
+/*                       Block                        */
+/**************************************************** */
+@import "./menu_page.css";
+@import "./store_page.css";
+@import "./product_page.css";
+@import "./shopping_card_page.css";
+@import "./blog_page.css";
+@import "./post_page.css";
+@import "./contact_page.css";
+@import "./auth_page.css";
+@import "./profile_page.css";
+
+/* ************************************************** */
+/* ************************************************** */
+/*                       Blocks                       */
+/**************************************************** */
+
+@import "./right_side_block.css";
+@import "./main_side_block.css";
+@import "./comment_block.css";
+@import "./reviews_block.css";
+
+/**************************************************** */

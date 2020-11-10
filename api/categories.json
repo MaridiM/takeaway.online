@@ -1,0 +1,25 @@
+{
+    "productsCategory": [
+        ["Все", "all"],
+        ["Нигири", "nigiri"],
+        ["Роллы", "rolls"],
+        ["Закуски", "starters"],
+        ["Сашими", "sashimi"],
+        ["Салаты", "salads"],
+        ["Супы", "Soups"],
+        ["Тартар", "tartars"],
+        ["Wok", "wok"],
+        ["Комбо", "combos"],
+        ["Десерты", "deserts"],
+        ["Напитки", "drinks"]
+    ],
+    "inventoryCategory": [
+        ["Для Все", "all"],
+        ["Для суши", "forSushi"],
+        ["Для пиццы", "forPizza"],
+        ["Для десертов", "forDesert"],
+        ["Полуфабрикаты", "Semi-finished"],
+        ["Посуда", "dishes"],
+        ["Инвентарь", "inventory"]
+    ]
+}

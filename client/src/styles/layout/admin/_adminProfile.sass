@@ -1,0 +1,109 @@
+.admin-profle
+    width: 100%
+    height: auto
+    &__body
+        width: 60%
+        height: auto
+        overflow: hidden
+        display: flex
+        background: #fff
+        padding: 50px
+        margin: 3% auto
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, .4)
+        button
+            width: 200px
+            height: auto
+            display: flex
+            align-items: center
+            justify-content: center
+            margin: 25px auto 0 auto
+            padding: 15px 25px 10px 25px
+            border: none
+            outline: none
+            background: $mainColor
+            font-size: 16px
+            font-family: $mainFont
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, .4)
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, .4)
+            color: #fff
+            &:hover
+                background: $activeColor
+    &__img
+        width: 300px
+        height: auto
+    &__content
+        display: flex
+        flex-direction: column
+        flex-grow: 1
+        height: 100%
+        &-fullname
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            flex-wrap: wrap
+            .ant-form-item
+                width: 80%
+                min-height: 50px
+                box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .4)
+                padding: 1px
+                border-radius: 3px
+                .ant-form-item-control
+                    min-height: 50px
+                    input
+                        font-size: 14px
+                        width: 100%
+                        min-width: 200px
+                        min-height: 50px
+                        background: $bgColor
+                        padding-top: 10px
+                        letter-spacing: 1px
+                         
+        &-contact
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            .ant-form-item
+                width: 80%
+                height: 50px
+                box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .4)
+                padding: 1px
+                border-radius: 3px
+                .ant-form-item-control-input
+                    min-height: 50px
+                    input
+                        font-size: 14px
+                        width: 100%
+                        min-width: 200px
+                        min-height: 50px
+                        background: $bgColor
+                        padding-top: 10px
+                        letter-spacing: 1px
+                           
+        &-password
+            display: flex
+            justify-content: space-around
+            align-items: center
+            padding: 0 10%
+            .ant-form-item
+                width: 50%
+                height: 50px
+                display: flex
+                align-items: center
+                box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .4)
+                padding: 1px
+                border-radius: 3px
+                &:nth-child(2)
+                    margin-left: 10px
+                .ant-form-item-control-input
+                    min-height: 50px
+                    input
+                        font-size: 14px
+                        width: 100%
+                        min-width: 200px
+                        min-height: 50px
+                        background: $bgColor
+                        padding-top: 10px
+                        letter-spacing: 1px
+                        
+                

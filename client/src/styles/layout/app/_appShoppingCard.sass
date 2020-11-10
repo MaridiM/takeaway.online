@@ -1,0 +1,271 @@
+.shopping-card-page 
+	height: 100vh 
+	display: flex 
+	hr 
+		width: 95% 
+		margin: auto 
+		border: none 
+		box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.07) 
+	.content 
+		height: 100vh 
+		display: flex 
+		justify-content: center 
+		align-items: flex-start 
+		position: relative
+	.items 
+		flex-grow: 1
+		max-height: 730px
+		display: flex 
+		justify-content: flex-start 
+		align-items: flex-start 
+		flex-wrap: wrap 
+		overflow-y: auto 
+		padding: 10px 25px 10px 8px
+		z-index: 0
+		margin: 50px -20px 50px 0px
+		overflow: hidden scroll
+		.item 
+			box-shadow: $accentBoxShadow 
+			border-radius: 5px 
+			width: 200px 
+			overflow: hidden 
+			display: flex 
+			flex-direction: column 
+			text-align: center 
+			background: #fff 
+			position: relative 
+			margin: 12px 
+			a:hover
+				color: $mainColor
+			.close 
+				position: absolute 
+				right: 3.5% 
+				top: 1.5% 
+				font-size: 22px 
+				color: rgba(44, 44, 44, 0.5) 
+				&:hover 
+					color: rgba(44, 44, 44, .9) 
+			.item-img 
+				border-radius: 5px 0 0 5px 
+				width: 100% 
+				height: auto 
+				overflow: hidden 
+				position: relative 
+				img 
+					border-radius: 5px 0 0 5px 
+					width: 150% 
+					position: absolute 
+					height: auto 
+			h2 
+				width: 100% 
+				height: 75px 
+				font-size: 18px 
+				display: flex 
+				justify-content: center 
+				align-items: center 
+				padding: 8px 20px 4px 20px 
+				margin: -40px 0 0 0 
+			.nav 
+				width: 100% 
+				padding: 10px 0 15px 0 
+				display: flex 
+				justify-content: center 
+				flex-direction: column 
+			.nav-price 
+				display: flex 
+				justify-content: center 
+				align-items: center 
+				font-size: 22px 
+				margin: 0 0 10px 0 
+				text-shadow: $textShadow 
+				span 
+					margin: 0 5px 
+			.nav-count 
+				display: flex 
+				justify-content: center 
+				align-items: center 
+				width: auto 
+				padding: 0 10px 
+				button 
+					display: block 
+					width: 40px 
+					height: 40px 
+					border-radius: 3px 
+					border: none 
+					font-size: 28px 
+					padding-left: 2px 
+					outline: none 
+					background: $baseColor 
+					color: $mainColor 
+					text-shadow: $textShadow 
+					box-shadow: $insetBoxShadow 
+					font-family: $mainFont 
+				.plus 
+					padding: 4px 3px 1px 4px
+					&:hover 
+						background: $activeColorClient 
+						color: #fff 
+				.minus 
+					padding: 4px 3px 1px 4px
+					&:hover 
+						background: $removeColor 
+						color: #fff 
+				.count 
+					width: 60px 
+					height: 40px 
+					background: $bgColor 
+					margin: auto 5px 
+					border-radius: 5px 
+					padding-top: 5px 
+					font-size: 24px 
+					box-shadow: $insetBoxShadow 
+					text-shadow: $textShadow 
+					display: flex 
+					justify-content: center 
+					align-items: center 
+			.discount 
+				position: absolute 
+				top: 10px 
+				left: calc(50% - 40px) 
+				width: 90px 
+				height: auto 
+				p 
+					position: absolute 
+					top: calc(50% - 10px) 
+					left: calc(50% - 20px) 
+					font-size: 15px 
+					color: #fff 
+					text-shadow: $textShadow 
+					span 
+						margin-right: 3px 
+	.order 
+		width: 500px 
+		height: 100% 
+		box-shadow: $rudeBoxShadow 
+		background: #fff 
+		display: flex 
+		flex-direction: column 
+		justify-content: flex-start 
+		align-items: center 
+		z-index: 1 
+		h2 
+			width: 100% 
+			height: 100px 
+			height: 100px 
+			display: flex 
+			justify-content: center 
+			align-items: center 
+			font-size: 36px 
+			font-size: 36px 
+			text-shadow: $textShadow 
+			padding-top: 10px 
+		.form-wrapper 
+			width: 100% 
+			height: 100% 
+			display: flex 
+			flex-direction: column 
+			justify-content: space-between 
+			overflow: hidden auto
+			.form
+				width: 100% 
+				height: auto
+				display: flex 
+				flex-direction: column 
+				justify-content: center 
+				align-items: center 
+				padding: 20px 0
+				.ant-form-item
+					width: 80%
+					margin: 0
+					display: flex
+					flex-direction: column
+					.ant-input-affix-wrapper
+						height: 60px
+						display: flex
+						input 
+							margin: 0
+							padding: 3px 15px 0 15px 
+					label 
+						width: 100% 
+						margin: 5px auto 5px auto 
+			.alert 
+				margin: 10px auto 
+				width: 90% 
+				font-size: 16px 
+				text-align: center 
+				text-shadow: $textShadow 
+				color: $mainColor 
+			.cost 
+				width: 90% 
+				height: 75px 
+				border-radius: 15px 
+				margin: 10px auto 
+				background: $bgColor 
+				box-shadow: $insetBoxShadow 
+				display: flex 
+				justify-content: center 
+				align-items: center 
+				font-size: 48px 
+				padding-top: 12px 
+				text-shadow: $textShadow 
+				span 
+					margin-right: 10px 
+			.nav 
+				width: 100% 
+				height: 100px 
+				display: flex 
+				.btns 
+					width: 100% 
+					height: 100% 
+					display: flex 
+					justify-content: space-between 
+					align-items: center 
+					padding: 0 20px 
+					font-size: 14px 
+					a 
+						width: 100px 
+						height: 50px 
+						border-radius: 5px 
+						border: 1px solid rgba(44, 44, 44, 0.05) 
+						display: flex 
+						justify-content: center 
+						align-items: center 
+						cursor: default 
+						&:hover 
+							color: $mainColor 
+							background: rgba(44, 44, 44, 0.1) 
+					.btn 
+						display: flex 
+						.btn__order-cancel
+							font-size: 14px 
+							border-radius: 5px 
+							background: $baseColor 
+							box-shadow: $insetBoxShadow 
+							font-family: $mainFont 
+							padding: 3px 10px 0 10px 
+							text-shadow: $textShadow
+							margin-right: 15px  
+							display: flex
+							align-items: center
+							justify-content: center
+							&:hover 
+								color: #fff 
+								background: $removeColor 
+						button
+							font-size: 14px 
+							width: 100px 
+							height: 50px 
+							border-radius: 5px 
+							border: none 
+							outline: none 
+							background: $baseColor 
+							box-shadow: $insetBoxShadow 
+							font-family: $mainFont 
+							padding-top: 3px 
+							text-shadow: $textShadow 
+							&:nth-child(2) 
+								background: $accentColor 
+								color: #FFF 
+							&:nth-child(2):hover 
+								color: #fff 
+								background: $activeColorClient 

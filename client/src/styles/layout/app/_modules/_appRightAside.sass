@@ -1,0 +1,96 @@
+.right-side 
+	height: 100vh 
+	width: 275px 
+	background: #fff 
+	box-shadow: $rudeBoxShadow 
+	text-align: center 
+	overflow-y: auto 
+	overflow-x: hidden 
+	margin-right: -15px 
+	padding: 0 15px 0 15px 
+	.item 
+		display: flex 
+		flex-direction: column 
+		align-items: center 
+		margin: 15px 8px 
+		box-shadow: $accentBoxShadow 
+		border-radius: 5px 
+		background: #fff 
+		position: relative 
+		a:hover
+			color: $mainColor
+		&:hover 
+			box-shadow: $rudeBoxShadow 
+			transform: scale(1.01) translate(0%, 0%) 
+		.item-img 
+			width: 100% 
+			height: auto 
+			overflow: hidden 
+		.item-nav 
+			width: 100% 
+			height: 50px 
+			display: flex 
+			justify-content: space-between 
+			align-items: center 
+			padding: 0 15px 
+			button 
+				width: auto 
+				height: 34px 
+				display: flex 
+				justify-content: center 
+				align-items: center 
+				padding: 3px 10px 0 10px 
+				font-size: 12px 
+				background: $accentColor 
+				font-family: $mainFont 
+				box-shadow: $insetBoxShadow 
+				text-shadow: $textShadow 
+				border: none 
+				border-radius: 5px 
+				color: #fff 
+				outline: none 
+				&:hover 
+					background: $activeColorClient 
+					color: #FFF 
+			.active 
+				background: $activeColor 
+				color: #FFF 
+		.item-nav-price 
+			width: 74px 
+			height: 34px 
+			display: flex 
+			justify-content: center 
+			align-items: center 
+			padding-top: 4px 
+			border-radius: 5px 
+			font-size: 18px 
+			background: $bgColor 
+			box-shadow: inset $rudeBoxShadow 
+			text-shadow: $textShadow 
+			margin: 0 
+			span 
+				margin-right: 3px 
+		.discount 
+			position: absolute 
+			top: 48px 
+			margin-left: 12px 
+			width: 100px 
+			height: auto 
+			p 
+				position: absolute 
+				top: calc(50% - 10px) 
+				left: calc(50% - 26px) 
+				font-size: 16px 
+				color: #fff 
+				text-shadow: $textShadow 
+				span 
+					margin-right: 3px 
+	.item-title 
+		width: 100% 
+		height: 60px 
+		padding: 0 10px 
+		font-size: 16px 
+		display: flex 
+		justify-content: center 
+		align-items: center 
+		text-align: center 

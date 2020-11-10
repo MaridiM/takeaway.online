@@ -1,0 +1,98 @@
+.cards 
+    display: flex 
+    justify-content: flex-start 
+    align-items: flex-start 
+    flex-wrap: wrap 
+    padding: 10px 15px
+    overflow: hidden scroll
+    width: calc(100% + 25px)
+    .item 
+        display: flex 
+        flex-direction: column 
+        align-items: center 
+        min-width: 210px 
+        max-width: 250px 
+        height: 330px
+        margin: 15px 10px 
+        box-shadow: $accentBoxShadow 
+        border-radius: 5px 
+        background: #fff 
+        position: relative 
+        a:hover
+            color: $mainColor
+        &:hover 
+            box-shadow: $rudeBoxShadow 
+            transform: scale(1.01) translate(0%, 0%) 
+        .item-img 
+            width: 90% 
+            height: auto 
+            overflow: hidden 
+        .item-nav 
+            width: 100% 
+            height: 50px 
+            display: flex 
+            justify-content: space-between 
+            align-items: center 
+            padding: 0 20px 10px 20px 
+            button 
+                width: auto 
+                height: 34px 
+                display: flex 
+                justify-content: center 
+                align-items: center 
+                padding: 0 10px
+                font-size: 12px 
+                background: $accentColor 
+                font-family: $mainFont 
+                box-shadow: $insetBoxShadow 
+                text-shadow: $textShadow 
+                border: none 
+                border-radius: 5px 
+                color: #fff 
+                outline: none 
+                &:hover 
+                    background: $activeColorClient 
+                    color: #FFF 
+            .active 
+                background: $activeColor 
+                color: #FFF 
+        .item-nav-price 
+            width: 74px 
+            height: 34px 
+            display: flex 
+            justify-content: center 
+            align-items: center 
+            padding-top: 4px 
+            border-radius: 5px 
+            font-size: 18px 
+            background: $bgColor 
+            box-shadow: inset $rudeBoxShadow 
+            text-shadow: $textShadow 
+            margin: 0 
+            span 
+                margin-right: 3px 
+        .discount 
+            position: absolute 
+            top: 40px
+            margin-left: 10px 
+            width: 100px 
+            height: auto 
+            p 
+                position: absolute 
+                top: calc(50% - 10px)
+                left: calc(50% - 25px)
+                font-size: 16px
+                color: #fff 
+                text-shadow: $textShadow 
+                span 
+                    margin-right: 3px 
+    .item-title 
+        width: 100% 
+        height: 50px 
+        padding: 0 10px 
+        margin-bottom: 0 
+        font-size: 16px 
+        display: flex 
+        justify-content: center 
+        align-items: center 
+        text-align: center 

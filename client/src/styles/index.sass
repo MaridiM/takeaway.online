@@ -1,0 +1,64 @@
+@import 'vars'
+@import "~antd/dist/antd.css";
+
+@import './layout/_modules/advertisings'
+@import './layout/_modules/empty'
+@import './layout/_modules/modal'
+@import './layout/_modules/upload_img'
+@import './layout/admin/admin'
+@import './layout/app/app'
+
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+img 
+    width: 100%
+    height: auto
+
+a 
+    text-decoration: none 
+    color: $mainColor 
+    &:hover 
+        text-decoration: none 
+        color: $accentColor
+ul 
+    li 
+        list-style: none 
+        margin: 0 
+input,
+textarea 
+    outline: none 
+    border: none 
+    font-size: 14px 
+
+body
+    font-family: $mainFont
+    color: $mainColor 
+    background: $bgColor
+    .btn:focus
+        box-shadow: none
+        border: none
+        outline: none
+    
+.admin-wrapper
+    background: $mainBackground
+    width: 100%
+    height: 100vh
+    display: flex
+    font-size: 16px
+    letter-spacing: 1.75px
+    line-height: 18px
+    a 
+        text-decoration: none
+        color: #ffffff
+
+.app-wrapper
+	width: 100% 
+	height: 100vh 
+	display: flex 
+	overflow: hidden 
+    font-weight: bold
+	.active 
+		color: $accentColor

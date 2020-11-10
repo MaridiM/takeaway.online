@@ -1,0 +1,171 @@
+/* **************************** */
+/*                              */
+/*          POST PAGE           */
+/*                              */
+/* **************************** */
+#post-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#post-page hr {
+    width: 95%;
+    margin: auto;
+    border: none;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.07);
+}
+
+#post-page .content {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: flex-start;
+    width: calc(100% - 275px);
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: -15px;
+    padding: 0 15px 0 15px;
+}
+
+#post-page .content .post {
+    width: 80%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* 
+// LEFT SIDE POST
+*/
+#post-page .content .post .left-side-post {
+    max-width: 400px;
+    height: 100%;
+}
+
+#post-page .content .post .left-side-post .img {
+    max-width: 400px;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: var(--insetBoxShadow);
+    padding: 15px;
+}
+
+#post-page .content .post .left-side-post .recipe {
+    margin: 15px auto;
+    font-size: 12px;
+}
+
+#post-page .content .post .left-side-post .recipe .table {
+    margin-bottom: 0;
+}
+
+#post-page .content .post .left-side-post .recipe th {
+    border: none;
+    font-size: 14px;
+}
+
+#post-page .content .post .left-side-post .recipe tr td {
+    padding: 5px 0 3px 30px;
+}
+
+/* 
+// CONTENT POST
+*/
+#post-page .content .post-content {
+    position: relative;
+    flex-grow: 1;
+    width: calc(100% - 400px);
+    min-width: 400px;
+}
+
+#post-page .content .post-content header {
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    padding: 0 25px;
+    text-shadow: var(--textShadow);
+}
+
+#post-page .content .post-content header h2 {
+    margin: 0;
+    padding: 5px 15px 0 15px;
+    font-size: 24px;
+}
+
+#post-page .content .post-content header .post-info {
+    height: 27px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 12px;
+    padding: 3px 15px 0 0;
+}
+
+#post-page .content .post-content header .post-info span {
+    margin-right: 20px;
+}
+
+#post-page .content .post-content .text {
+    width: 100%;
+    height: calc(100% - 120px);
+    padding: 10px 20px;
+    text-align: justify;
+    text-indent: 25px;
+    font-size: 14px;
+}
+
+#post-page .content .post-content footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+#post-page .content .post-content footer .soc {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 26px;
+    margin: 0;
+    padding-right: 20px;
+    text-shadow: var(--textShadow);
+}
+
+#post-page .content .post-content footer .soc li {
+    margin: 0 5px;
+    /* padding: 5px 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#post-page .content .post-content footer .soc li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#post-page .content .post-content footer .soc li a:hover {
+    color: var(--accentColor);
+}
+
+#post-page .content .post-content footer .soc li span {
+    margin-left: 8px;
+    font-size: 18px;
+    padding: 5px 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: var(--insetBoxShadow);
+}

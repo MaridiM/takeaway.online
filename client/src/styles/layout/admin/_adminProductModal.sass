@@ -1,0 +1,193 @@
+.admin-product-modal 
+    &__wrapper
+        width: 100%
+        height: 100%
+        background: rgba(0, 0, 0, .3)
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 10
+        display: flex
+        align-items: flex-start
+        justify-content: center
+    &__window
+        width: 1000px
+        margin-top: 3%
+        height: auto
+        background: #fff
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, .4)
+    &__header
+        width: 100%
+        height: 50px
+        background: $mainColor
+        padding: 3px 25px 0 25px
+        display: flex
+        justify-content: space-between
+        h4
+            color: #fff
+            font-size: 18px
+            width: 300px
+            text-shadow: 1px 1px 4px rgba(255, 255, 255, .4)
+    &__body
+        padding: 20px
+        display: flex
+        width: 100%
+        height: calc(100% - 100px)
+        &-img
+            min-width: 300px
+            max-width: 300px
+            height: 300px
+        &-content
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-conent: center
+            align-items: center
+            flex-grow: 1
+            margin: 5px 0 5px 20px  
+
+            padding: 0 20px
+            border-left: 1px solid rgba(0, 0, 0, .1)
+            .ant-form-item
+                padding: 0
+                width: 95%
+                min-height: 50px
+                background: $bgColor
+                box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .4)
+                border-radius: 3px
+                overflow: hidden
+                padding: 1px
+                &-control-input,
+                &-control-input-content
+                    height: 100%
+                    input
+                        width: 100%
+                        min-height: 50px
+                        margin: auto
+                        padding: 3px 15px 0 15px
+                        background: $mainBackground
+                        color: $mainColor
+                        background: $bgColor
+                        resize: none
+                    textarea
+                        width: 100%
+                        min-height: 100px
+                        padding: 10px 15px 
+                        background: $bgColor
+                        color: $mainColor
+                        resize: none
+            &-category
+                width: 95%
+                text-align: right
+                margin: 10px 0
+                label
+                    font-size: 14px
+                    margin-right: 10px
+                input
+                    width: 200px
+                    min-height: 30px
+                    padding: 5px 15px 0 15px
+                    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .4)
+                    color: $mainColor
+                    background: $bgColor
+            &-discount
+                width: 95%
+                display: flex
+                justify-content: flex-end
+                margin: 10px 0
+                &-input-group
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    .ant-checkbox-wrapper
+                        height: 100%
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        .ant-checkbox
+                            .ant-checkbox-inner
+                                width: 25px
+                                height: 25px
+                    .ant-form-item
+                        padding: 0
+                        height: 30px
+                        overflow: hidden
+                        &-control-input,
+                        &-control-input-content
+                            height: 100px
+                &-input-group-list
+                    display: flex
+                    height: 30px
+                    padding: 0
+                    input
+                        padding: 5px 15px 0 15px
+                        box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .4)
+                        color: $mainColor
+                        background: $bgColor
+                        width: 100px
+                    .ant-form-item
+                        margin: 0 10px
+                        padding: 0
+                        min-height: 30px
+                        &-control-input
+                            min-height: 30px
+                            input
+                                padding: 5px 10px 0 10px
+                                font-size: 12px
+                                margin: 0
+                                color: $mainColor
+                                width: 100px
+                                min-height: 30px
+            &-price
+                width: 95%
+                display: flex
+                justify-content: flex-end
+                height: 30px
+                overflow: hidden
+                margin: 10px 0
+            &-input-price
+                display: flex
+                input
+                    width: 100px
+                    min-height: 30px
+                    padding: 5px 15px 0 15px
+                    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .4)
+                    color: $mainColor
+                    background: $bgColor
+                .ant-form-item
+                    margin: 0 10px
+                    padding: 0
+                    min-height: 30px
+                    &-control-input
+                        min-height: 30px
+                        input
+                            min-height: 30px
+                        input:nth-child(1)
+                            font-size: 14px
+                            padding-top: 5px
+                            width: 150px
+                        input:nth-child(2)
+                            width: 75px
+                            font-size: 12px
+    &__footer
+        width: 100%
+        height: 50px
+        border-top: 1px solid rgba(0, 0, 0, .1)
+.btns
+    width: 100%
+    text-align: right
+    padding: 15px 20px 20px 20px 
+    .nav-btn 
+        background: none
+        border: none
+        outline: none
+        height: 40px
+        margin: 5px
+        padding: 5px 15px 0 15px
+        &:hover
+            color: #fff
+            background: $mainColor
+        &:focus
+            box-shadow: none
+
+            

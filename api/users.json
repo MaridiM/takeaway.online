@@ -1,0 +1,18 @@
+[
+    {
+        "_id": "flsj3824kfdsnp93458lkvdzsdw",
+        "avatar": "/img/profile/avatars/avatar.jpg",
+        "username": "Alina Milkevich",
+        "email": "maridim92@gmail.com",
+        "password": "",
+        "access": 0        
+    },
+    {
+        "_id": "flsj3asdfdsnp93458lkvdzsdw",
+        "avatar": null,
+        "username": "Karina Dalka",
+        "email": "maridim1324@gmail.com",
+        "password": "",
+        "access": 1        
+    }
+]

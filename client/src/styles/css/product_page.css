@@ -1,0 +1,190 @@
+/* **************************** */
+/*                              */
+/*        PRODUCT PAGE          */
+/*                              */
+/* **************************** */
+#product-page {
+    height: 100vh;
+    display: flex;
+}
+
+#product-page hr {
+    width: 98%;
+    margin: auto;
+    border: none;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.07);
+}
+
+/* 
+// CONTENT CONTACT
+*/
+#product-page .content {
+    width: calc(100% - 275px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+#product-page .content .product {
+    width: 70%;
+    height: 600px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: var(--accentBoxShadow);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+}
+/* 
+// PRODUCT HEADER
+*/
+#product-page .content .product header {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    margin: 0;
+}
+#product-page .content .product header .img {
+    width: auto;
+    height: 90px;
+    padding: 0;
+    padding: 5px 15px 5px 10px;
+}
+#product-page .content .product header .img img{
+    width: auto;
+    height: 100%;
+}
+#product-page .content .product header .title {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+#product-page .content .product header .title h2 {
+    font-size: 22px;
+    padding: 10px 20px 5px 20px;
+}
+#product-page .content .product header .title .reviews {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+    padding: 5px 20px 2px 20px;
+    margin: 0;
+}
+#product-page .content .product header .title .reviews li {
+    margin: 0 10px;
+}
+#product-page .content .product header .title .reviews li:nth-child(2) {
+    margin: 0 5px;
+    flex-grow: 1;
+}
+/* 
+// PRODUCT CONTENT
+*/
+#product-page .content .product .product-content {
+    width: 100%;
+    height: calc(100% - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#product-page .content .product .product-content .btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin: 0;
+    position: absolute;
+    bottom: 2%;
+}
+
+#product-page .content .product .product-content .btns li {
+    margin: 0 25px;
+}
+
+#product-page .content .product .product-content .btns li a {
+    border-radius: 5px;
+    border: 1px solid rgba(20, 20, 20, 0.05);
+    background: rgba(0, 0, 0, .05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    padding: 8px 10px 5px 12px;
+}
+
+#product-page .content .product .product-content .btns li a:hover {
+    background: rgba(0, 0, 0, .2);
+    color: #fff;
+}
+
+#product-page .content .product .product-content .btns li button {
+    display: block;
+    border-radius: 3px;
+    border: none;
+    padding-left: 2px;
+    outline: none;
+    background: var(--accentColor);
+    color: #fff;
+    text-shadow: var(--textShadow);
+    box-shadow: var(--insetBoxShadow);
+    font-family: var(--mainFont);
+    padding: 8px 10px 5px 10px;
+    letter-spacing: 1px;
+}
+
+#product-page .content .product .product-content .btns li button:hover {
+    background: var(--activeColor);
+}
+#product-page .content .product .product-content .img {
+    width: 500px;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#product-page .content .product .product-content .description {
+    width: calc(100% - 500px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-shadow: var(--textShadow);
+    padding: 10px;
+    margin: -90px 0 0 0;
+}
+#product-page .content .product .product-content .description .text { 
+    padding: 0 40px 0px 40px;
+    font-size: 14px;
+    min-height: 70px;
+    max-height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0px;
+    margin: 25px auto 50px auto;
+}
+#product-page .content .product .product-content .description .price { 
+    font-size: 28px;
+    font-weight: 600;
+    text-shadow: var(--textShadow);
+    text-indent: 15px;
+    margin: 2.5px 25px 2.5px 25px;
+}
+#product-page .content .product .product-content .description .price span { 
+    margin: 0 5px 0 0;
+    text-indent: 15px;
+}
